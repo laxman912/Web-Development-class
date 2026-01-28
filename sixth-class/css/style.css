@@ -1,0 +1,27 @@
+h1,a{
+    color: tomato;
+}
+
+p{
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+h2{
+    color: red;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p span{
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(169,198,161);
+}
+.text-brown
+.new-course span{
+    color:aquamarine
+}
