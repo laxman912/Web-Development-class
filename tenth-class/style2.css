@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+/* common box style */
+.box {
+  position: fixed;
+  width: 90px;
+  height: 90px;
+}
+
+/* corners */
+
+.top-left {
+  top: 10px;
+  left: 10px;
+  background-color: crimson;
+}
+
+.top-right {
+  top: 10px;
+  right: 10px;
+  background-color: seagreen;
+}
+
+.bottom-left {
+  bottom: 10px;
+  left: 10px;
+  background-color: royalblue;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  background-color: orange;
+}
+
+
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: purple;
+}
+
+.content {
+  height: 2000px;
+}
