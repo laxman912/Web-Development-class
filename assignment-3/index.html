@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Play/Pause Toggle</title>
+</head>
+<body>
+
+<!-- Container for video and overlay -->
+<div style="position: relative; width: 400px; height: 300px;">
+
+    <!-- Video -->
+    <video id="myVideo" width="400" height="300" autoplay muted loop>
+        <source src="pokhari.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Play/Pause Button -->
+    <svg id="playPauseBtn"
+         xmlns="http://www.w3.org/2000/svg"
+         width="60" height="60"
+         viewBox="0 0 24 24"
+         style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); cursor: pointer;">
+        <!-- Circle background -->
+        <circle cx="12" cy="12" r="12" fill="rgba(0,0,0,0.5)" />
+        <!-- Triangle for Play -->
+        <polygon id="playIcon" points="10,8 16,12 10,16" fill="white" />
+        <!-- Two rectangles for Pause (hidden initially) -->
+        <g id="pauseIcon" style="display: none;" fill="white">
+            <rect x="10" y="8" width="2" height="8"/>
+            <rect x="14" y="8" width="2" height="8"/>
+        </g>
+    </svg>
+
+</div>
+
+<script>
+    const video = document.getElementById('myVideo');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const playIcon = document.getElementById('playIcon');
+    const pauseIcon = document.getElementById('pauseIcon');
+
+    playPauseBtn.addEventListener('click', () => {
+        if (video.paused) {
+            video.play();
+            playIcon.style.display = 'none';
+            pauseIcon.style.display = 'block';
+        } else {
+            video.pause();
+            playIcon.style.display = 'block';
+            pauseIcon.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
