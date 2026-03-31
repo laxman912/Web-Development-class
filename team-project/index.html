@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>🎯 Smart Quiz Learning Game</header>
+
+<div class="container">
+
+  <div id="home">
+    <h2>Select Topic</h2>
+    <button onclick="startCategory('cyber')">Cybersecurity</button>
+    <button onclick="startCategory('credit')">Credit Cards</button>
+    <button onclick="startCategory('web')">Web Dev</button>
+
+    <hr>
+
+    <h3>Add Your Own Syllabus</h3>
+    <p>Format: Question | Option1,Option2,Option3,Option4 | Answer</p>
+    <textarea id="customInput"></textarea>
+    <button onclick="loadCustomQuiz()">Start Custom Quiz</button>
+  </div>
+
+  <div id="quiz" class="hidden">
+    <div id="timer">Time: 30</div>
+    <div id="question" class="question"></div>
+    <div id="options" class="options"></div>
+  </div>
+
+
+  <div id="result" class="hidden">
+    <h2 id="score"></h2>
+    <button onclick="location.reload()">Restart</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
