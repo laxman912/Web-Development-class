@@ -88,3 +88,82 @@ footer p{font-size:14px}
   .nav-links{display:none}
   .burger{display:block}
 }
+
+/* -------------------- CLOCKS SECTION -------------------- */
+.clocks-section {
+  background: #f3f4f6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.clock-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.clock-title {
+  display: inline-block;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.clock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.clock-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+/* --- DARK MODE OVERRIDES --- */
+body.dark-mode {
+  background: #0f172a; 
+  color: #f1f5f9;      
+}
+
+/* Update section backgrounds */
+body.dark-mode .about-section,
+body.dark-mode .portfolio-section,
+body.dark-mode .contact-section,
+body.dark-mode .clocks-section {
+  background: #1e293b; 
+}
+
+/* Update card and item backgrounds */
+body.dark-mode .skill-item,
+body.dark-mode .portfolio-item,
+body.dark-mode .clock-item {
+  background: #334155;
+  color: #fff;
+}
+
+/* Adjust Borders and Hero text */
+body.dark-mode .about-title, 
+body.dark-mode .skills-title, 
+body.dark-mode .portfolio-title, 
+body.dark-mode .contact-title,
+body.dark-mode .clock-title,
+body.dark-mode .hero-left h1,
+body.dark-mode .nav-links li a {
+  border-color: #fff;
+  color: #fff;
+}
+
+body.dark-mode .navbar {
+  background: #1e293b;
+}
+
+body.dark-mode .hero-right::before {
+  background: #000; 
+}

@@ -42,6 +42,8 @@
     </div>
   </header>
 
+  
+
 
   <!-- About -->
   <section id="about" class="fade-in about-section">
@@ -148,33 +150,53 @@
   </section>
 
 
-  <!-- Contact -->
-  <section id="contact" class="fade-in contact-section">
-    <div class="contact-container">
-      <h2 class="contact-title">CONTACT</h2>
-      <p>
-        If you are interested in cooperation or would like to hire me for your project –
-        please contact me by e-mail (<strong>laxmanmahato607@gmail.com.com</strong>) or use the form below.
-      </p>
+ <!-- Contact -->
+<section id="contact" class="fade-in contact-section">
+  <div class="contact-container">
+    <h2 class="contact-title">CONTACT</h2>
+    <p>
+      If you are interested in cooperation or would like to hire me for your project –
+      please contact me by e-mail (<strong>laxmanmahato607@gmail.com</strong>) or use the form below.
+    </p>
 
-      <form>
-        <label>ENTER YOUR NAME*</label>
-        <input type="text" required>
+    <!-- form section -->
+    <form action="https://formspree.io/f/mjgjrkgz" method="POST">
+      <label for="name">ENTER YOUR NAME*</label>
+      <input type="text" id="name" name="name" required>
 
-        <label>ENTER YOUR EMAIL*</label>
-        <input type="email" required>
+      <label for="email">ENTER YOUR EMAIL*</label>
+      <input type="email" id="email" name="email" required>
 
-        <label>PHONE NUMBER</label>
-        <input type="tel">
+      <label for="phone">PHONE NUMBER</label>
+      <input type="tel" id="phone" name="phone">
 
-        <label>YOUR MESSAGE*</label>
-        <textarea required></textarea>
+      <label for="message">YOUR MESSAGE*</label>
+      <textarea id="message" name="message" required></textarea>
 
-        <p class="note">Fields marked with an asterisk must be filled.</p>
-        <button type="submit">SUBMIT</button>
-      </form>
+      <p class="note">Fields marked with an asterisk must be filled.</p>
+      <button type="submit">SUBMIT</button>
+    </form>
+    <!-- ✅ END OF FORM UPDATE -->
+  </div>
+</section>
+
+<!-- Digital Clocks -->
+<section id="clocks" class="fade-in clocks-section">
+  <div class="clock-container">
+    <h2 class="clock-title">DIGITAL CLOCKS</h2>
+    <div class="clock-grid">
+      <div class="clock-item">
+        <h3>Nepal Time</h3>
+        <p id="nepal-clock"></p>
+      </div>
+      <div class="clock-item">
+        <h3>Your Local Time</h3>
+        <p id="local-clock"></p>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <footer>
     <div class="footer-nav">
