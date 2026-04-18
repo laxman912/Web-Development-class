@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laxman Mahato Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#about">About me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+
+  <header class="hero">
+    <div class="hero-left">
+      <div class="content">
+        <p class="greeting">Hi, I am</p>
+        <h1>Laxman Mahato</h1>
+        <p class="subtitle">Front-end Developer / UI Designer</p>
+        <div class="social-icons">
+          <a href="resume.pdf.pdf" target="_blank"><i class="fa-solid">@</i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="portfolio image.jpeg" alt="Laxman Mahato Portrait">
+    </div>
+  </header>
+
+
+  <!-- About -->
+  <section id="about" class="fade-in about-section">
+    <div class="about-container">
+      <h2 class="about-title">ABOUT ME</h2>
+      <p>
+        Hi, I’m Laxman Mahato, a BSIT student at King’s College. I’m passionate about web
+        development and enjoy building clean, responsive websites. I’ve been working with
+        front-end technologies and continuously improving my skills by creating real-world projects.
+      </p>
+      <p>
+        I’ve built several projects that helped me improve both my design and technical skills. I’m fluent
+        in English and always open to learning new things. Outside of coding, I’m interested in cybersecurity and
+        enjoy following Formula 1 in my free time.
+      </p>
+      <a href="#more" class="about-more">MORE</a>
+    </div>
+  </section>
+
+
+  <!-- Services -->
+  <section id="services" class="fade-in services-section">
+    <div class="service">
+      <div class="icon">🎨</div>
+      <h3>DESIGN</h3>
+      <p>I can design the website based on your needs and suggestions. I can also create it from scratch by consulting
+        with you during my work.</p>
+    </div>
+    <div class="service">
+      <div class="icon">💻</div>
+      <h3>DEVELOPMENT</h3>
+      <p>Based on a project created by me (or any another one provided by you), I can code the website to be fully
+        functional and responsive.</p>
+    </div>
+    <div class="service">
+      <div class="icon">🛠️</div>
+      <h3>MAINTENANCE</h3>
+      <p>I will look after your website, and in case of problems or the need for changes, I can introduce new
+        functionalities and solutions.</p>
+    </div>
+  </section>
+
+
+  <!-- Skills -->
+  <section id="skills" class="fade-in skills-section">
+    <div class="skills-container">
+      <h2 class="skills-title">SKILLS</h2>
+
+      <!-- USING NOW -->
+      <h3 class="skills-subtitle">USING NOW:</h3>
+      <div class="skills-grid">
+        <div class="skill-item">HTML5</div>
+        <div class="skill-item">CSS3</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">Codeblock</div>
+      </div>
+
+      <!-- LEARNING -->
+      <h3 class="skills-subtitle">LEARNING:</h3>
+      <div class="skills-grid">
+        <div class="skill-item">Python</div>
+        <div class="skill-item">UX/UI</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="fade-in portfolio-section">
+    <div class="portfolio-container">
+      <h2 class="portfolio-title">PORTFOLIO</h2>
+
+      <!-- Tabs -->
+      <div class="portfolio-tabs">
+        <button data-filter="all" class="active">ALL</button>
+        <button data-filter="coded">CODED</button>
+        <button data-filter="designed">DESIGNED</button>
+      </div>
+
+      <!-- Grid of projects -->
+      <div class="portfolio-grid">
+        <!-- Replace these with your own images -->
+        <div class="portfolio-item coded">
+          <img src="img.1.png" alt="countsdown code">
+          <p>Countsdown</p>
+        </div>
+        <div class="portfolio-item designed">
+          <img src="img.2.png" alt="Quiz project">
+          <p>Game Zone</p>
+        </div>
+        <div class="portfolio-item coded">
+          <img src="img.3.png" alt="World Cup">
+          <p>World Cup</p>
+        </div>
+        <div class="portfolio-item designed">
+          <img src="img.4.png" alt="Eatsome project">
+          <p>Excitment</p>
+        </div>
+        <div class="portfolio-item coded">
+          <img src="img.5.png" alt="Weather soite coded">
+          <p>Weather Site</p>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="fade-in contact-section">
+    <div class="contact-container">
+      <h2 class="contact-title">CONTACT</h2>
+      <p>
+        If you are interested in cooperation or would like to hire me for your project –
+        please contact me by e-mail (<strong>laxmanmahato607@gmail.com.com</strong>) or use the form below.
+      </p>
+
+      <form>
+        <label>ENTER YOUR NAME*</label>
+        <input type="text" required>
+
+        <label>ENTER YOUR EMAIL*</label>
+        <input type="email" required>
+
+        <label>PHONE NUMBER</label>
+        <input type="tel">
+
+        <label>YOUR MESSAGE*</label>
+        <textarea required></textarea>
+
+        <p class="note">Fields marked with an asterisk must be filled.</p>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="#top">BACK TO TOP ↑</a>
+    </div>
+    <div class="footer-icons">
+      <!-- Replace with actual icons/images -->
+      <a href="#">Figma</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">CodePen</a>
+      <a href="#">Email</a>
+    </div>
+    <p>©2026 Laxman Mahato All Rights Reserved 🔥</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
